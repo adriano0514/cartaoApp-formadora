@@ -11,7 +11,7 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'sobre',
-    loadComponent: () => import('./sobre/sobre.page').then( m => m.SobrePage)
+    path: 'color-change',
+    loadComponent: () => import('./color-change/color-change.page').then( m => m.ColorChangePage)
   },
 ];

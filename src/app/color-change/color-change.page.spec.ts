@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SobrePage } from './sobre.page';
+import { ColorChangePage } from './color-change.page';
 
-describe('SobrePage', () => {
-  let component: SobrePage;
-  let fixture: ComponentFixture<SobrePage>;
+describe('ColorChangePage', () => {
+  let component: ColorChangePage;
+  let fixture: ComponentFixture<ColorChangePage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SobrePage);
+    fixture = TestBed.createComponent(ColorChangePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Color Change</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [style.--background]="bgColor">
+
+  <h2>Controle RGB</h2>
+
+  <ion-item>
+    <ion-label>Red</ion-label>
+    <ion-range min="0" max="255" [(ngModel)]="r"></ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Green</ion-label>
+    <ion-range min="0" max="255" [(ngModel)]="g"></ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Blue</ion-label>
+    <ion-range min="0" max="255" [(ngModel)]="b"></ion-range>
+  </ion-item>
+
+  <ion-button expand="full" [style.--background]="btnColor" (click)="mudarBotao()">
+</ion-button>
+
+  <ion-button expand="full" (click)="mudarFundo()">
+    Trocar cor de fundo
+  </ion-button>
+
+  <ion-buttons>
+    <ion-back-button defaultHref="/home"></ion-back-button>
+  </ion-buttons>
+
+</ion-content>

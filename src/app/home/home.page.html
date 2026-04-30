@@ -4,23 +4,57 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content style="--background:#000;">
 
-  <ion-card>
-    <img src="assets/foto.png" alt="Minha foto">
+  <div
+    style="
+      width:92%;
+      max-width:390px;
+      margin:25px auto 0 auto;
+      text-align:center;
+      color:white;
+    ">
 
-    <ion-card-header>
-      <ion-card-title>Adriano Pacheco Werneck</ion-card-title>
-      <ion-card-subtitle>
-        Turma: ADS0301M | Unidade: Campo Grande CG1 | Turno: Manhã
-      </ion-card-subtitle>
-    </ion-card-header>
+    <img
+      src="assets/foto.png"
+      alt="Minha foto"
+      style="
+        width:165px;
+        height:165px;
+        border-radius:50%;
+        object-fit:cover;
+        display:block;
+        margin:0 auto 12px auto;
+      "
+    >
 
-    <ion-card-content>
-      <ion-button expand="full" routerLink="/sobre">
-        Ver mais
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+    <h1 style="font-size:27px; margin:0 0 10px 0;">
+      Adriano Pacheco Werneck
+    </h1>
+
+    <p style="font-size:19px; margin:2px 0;">Turma: ADS0301M</p>
+    <p style="font-size:19px; margin:2px 0;">Unidade: Campo Grande CG1</p>
+    <p style="font-size:19px; margin:2px 0;">Turno: Manhã</p>
+
+    <ion-button expand="block" routerLink="/color-change" style="margin-top:12px;">
+      Color Change
+    </ion-button>
+
+    <h2 style="margin-top:18px;">Palavra-Chave</h2>
+
+    <ion-item style="margin-top:8px; border-radius:12px;">
+      <ion-input
+        placeholder="Digite a palavra"
+        [(ngModel)]="novaPalavra">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" style="margin-top:12px;" (click)="salvarPalavra()">
+      Salvar
+    </ion-button>
+
+    <h3 style="margin-top:12px;">{{ palavraChave }}</h3>
+
+  </div>
 
 </ion-content>
